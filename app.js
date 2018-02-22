@@ -18,7 +18,7 @@ function gameLoop() {
     x -= 0.4;
     }
 
-    if (x<73.2 && keyState[39] || keyState[68]){
+    if (x<73.1 && keyState[39] || keyState[68]){
     x += 0.4;
     }
 
