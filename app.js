@@ -1,6 +1,6 @@
 var heart = document.querySelector('.heart');
-var x = 200;
-var y = 200;
+var x = 25;
+var y = 25;
 var keyState = {};
 
 window.addEventListener('keydown',function(event){
@@ -14,25 +14,25 @@ window.addEventListener('keyup',function(event){
 
 function gameLoop() {
 
-    if (x>1 && keyState[37] || keyState[81]){
-    x -= 3;
+    if (x>0 && keyState[37] || keyState[81]){
+    x -= 0.4;
     }
 
-    if (x<415 && keyState[39] || keyState[68]){
-    x += 3;
+    if (x<53 && keyState[39] || keyState[68]){
+    x += 0.4;
     }
 
-    if (y>1 && keyState[38] || keyState[90]) {
-        y -= 3;
+    if (y>0 && keyState[38] || keyState[90]) {
+        y -= 0.4;
     }
 
-    if (y<415 && keyState[40] || keyState[83]) {
-        y += 3;
+    if (y<53 && keyState[40] || keyState[83]) {
+        y += 0.4;
     }
 
 
-    heart.style.top = y + "px";
-    heart.style.left = x + "px";
+    heart.style.top = y + "vh";
+    heart.style.left = x + "vh";
 
     setTimeout(gameLoop, 10);
 }
