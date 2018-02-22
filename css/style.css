@@ -1,0 +1,25 @@
+.body {
+    background-color: black;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 21vh;
+}
+
+.zone {
+    width: 60vh;
+    height: 60vh;
+    background-color: black;
+    border: solid 2px white;
+    margin: 0 2px;
+    position: relative;
+}
+
+
+
+.heart {
+    width: 7vh;
+    position: absolute;
+}
