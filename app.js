@@ -1,5 +1,5 @@
 var heart = document.querySelector('.heart');
-var x = 25;
+var x = 35;
 var y = 25;
 var keyState = {};
 
