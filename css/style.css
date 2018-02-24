@@ -36,9 +36,14 @@
     margin-top: 2vh;
 }
 
+.lv {
+    font-size: 4vh;
+}
+
 .hp {
     text-transform: uppercase;
     font-size: 3vh;
+    margin-left: 10vh;
 }
 
 .hpBar[value] {
