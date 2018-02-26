@@ -22,19 +22,19 @@
     );
 
     (function gameLoop() {
-        if (x > 0 && keyState[37] || keyState[81]){
+        if (x > 0 && (keyState[37] || keyState[81])){
             x -= 0.4;
         }
 
-        if (x < 73.1 && keyState[39] || keyState[68]){
+        if (x < 73.1 && (keyState[39] || keyState[68])){
             x += 0.4;
         }
 
-        if (y > 0 && keyState[38] || keyState[90]) {
+        if (y > 0 && (keyState[38] || keyState[90])) {
             y -= 0.4;
         }
 
-        if (y < 53 && keyState[40] || keyState[83]) {
+        if (y < 53 && (keyState[40] || keyState[83])) {
             y += 0.4;
         }
 
